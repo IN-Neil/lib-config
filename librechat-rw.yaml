@@ -5,6 +5,22 @@ cache: true
 registration:
   socialLogins: ["discord", "facebook", "github", "google", "openid"]
 
+speech:
+  tts:
+    elevenlabs:
+        apiKey: '${TTS_API_KEY}'
+        model: 'eleven_turbo_v2.5'
+        voices: ['Gympn2UbmkJD4IHh5kzM', 'KtXz6ihhdvhe2CpBPQX3', 'ddiq1IkwhtAlQgobNKtj']
+        voice_settings:
+          similarity_boost: 0.43
+          stability: 0.31
+          style: 0.0
+
+stt:
+  openai:
+      apiKey: '${STT_API_KEY}'
+      model: 'whisper-1'
+
 endpoints:
   custom:
     # Anyscale
